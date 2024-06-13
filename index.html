@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Quicksand:wght@300;500;700&family=Roboto+Flex:opsz,wght@8..144,300&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --green: #ECFDF5;
+            --greenBotton: #22C55E;
+            --bluecontact: #3B82F6;
+            --linedivision: #E2E8F0;
+        }
+
+        body {
+            font-family: 'Roboto Flex', sans-serif;
+        }
+
+        .container {
+            width: 920px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title {
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: 1px solid var(--linedivision);
+        }
+
+        .title-left-right {
+            width: 920px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .title-left {
+            display: flex;
+            width: auto;
+        }
+
+        .title-left img {
+            width: 50px;
+            height: 50px;
+            margin: 15px 4px 15px 0;
+        }
+
+        .title-left p {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .title-right {
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .contact-us-button {
+            width: auto;
+            height: 30px;
+            background-color: var(--bluecontact);
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact-us-button:hover {
+            cursor: pointer;
+        }
+
+        .presentation {
+            margin-top: 32px;
+            width: auto;
+            height: 398px;
+            display: flex;
+            justify-content: center;
+            background-image: url(./assets/imgs/Encabezado.svg)
+        }
+
+        .container-presetation {
+            display: grid;
+            justify-content: center;
+        }
+
+        .description-presentation {
+            justify-content: center;
+            height: auto;
+        }
+
+        .description-presentation h1 {
+            text-align: center;
+            padding-top: 15%;
+            color: white;
+            font-size: 20px;
+        }
+
+        .container-botton-presentation {
+            display: flex;
+            justify-content: center;
+        }
+
+        .welcome-container {
+            margin-top: 32px;
+            width: auto;
+        }
+
+        .welcome-container h2 {
+            font-weight: bold;
+        }
+
+        .welcome-container p {
+            text-align: justify;
+        }
+
+        .cards-container {
+            margin-top: 32px;
+            width: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .card-service {
+            Width: auto;
+            Height: 195px;
+            margin: 10px;
+            display: grid;
+            justify-items: center;
+        }
+
+        .card-service img {
+            width: 96px;
+            height: 96px;
+        }
+
+        .title-card {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .description-card {
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .products-container {
+            width: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            gap: 10px;
+            margin-top: 32px;
+
+        }
+        .product-card {
+            width: 100%;
+            height: 304px;
+        }
+
+        .product-card-laptop {
+            background-image: url(./assets/imgs/portatiles.svg);
+            background-size: cover;
+        }
+
+        .product-card-desktop {
+            background-image: url(./assets/imgs/TodoEnUno.svg);
+            background-size: cover;
+        }
+
+        .product-card-mobile {
+            background-image: url(./assets/imgs/Celulares.svg);
+            background-size: cover;
+        }
+
+        .product-card-accessories {
+            background-image: url(./assets/imgs/Accesorios.svg);
+            background-size: cover;
+        }
+
+        .product-card-printers {
+            background-image: url(./assets/imgs/Impresoras.svg);
+            background-size: cover;
+        }
+
+        .product-card-monitors {
+            background-image: url(./assets/imgs/Monitores.svg);
+            background-size: cover;
+        }
+
+        h3 {
+            font-weight: bold;
+        }
+
+        .product {
+            width: auto;
+            height: 25px;
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-top: 85%;
+            margin-left: 5px;
+        }
+
+        .marcas {
+            margin: 0;
+            font-size: 16px;
+            color: white;
+            width: auto;
+            height: 17px;
+            margin-left: 5px;
+        }
+
+        .cctv {
+            width: auto;
+            height: 164px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 64px;
+            justify-content: center;
+            background-color: #ffffff;
+            border-radius: 16px;
+            border: 1px solid var(--linedivision);
+        }
+
+        .association {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 90%;
+            gap: 64px;
+            border-right: 1px solid var(--linedivision);
+        }
+
+        .service-association {
+            text-align: center;
+            align-items: center;
+        }
+
+        .button-association {
+            background-color: #22C55E;
+            width: 120px;
+
+        }
+        .association-item {
+            width: 60px;
+        }
+
+        .association-item img {
+            width: 100%;
+        }
+        .carousel {
+            margin-top: 56px;
+            display: flex;;
+        }
+        .carousel-item{
+            width: 100%;
+            height: 280px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 16px;
+        }
+        .carousel h3{
+            color:#ffffff;
+            font-weight: bold;
+            font-size: 48px;
+            margin-bottom: 8px;
+        }
+        .carousel p{
+            color:#ffffff;
+            font-size: 16px; 
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <header class="title">
+            <div class="title-left-right">
+                <div class="title-left">
+                    <img src="./assets/icons/LogoF5.svg" alt="logo" class="logo">
+                    <p>Central de Tecnologia</p>
+                </div>
+                <div class="title-right">
+                    <button class="contact-us-button"> Contactanos</button>
+                </div>
+
+            </div>
+
+        </header>
+
+        <div class="container">
+
+            <section class="presentation">
+                <div class="container-presetation">
+
+                    <div class="description-presentation">
+                        <h1>“La tecnología no es nada. Lo importante es que tengas fe en la gente, que sean básicamente
+                            buenas e inteligentes, y si les das herramientas, harán cosas maravillosas con ellas”. Steve
+                            Jobs, cofundador y presidente ejecutivo de Apple Inc.</h1>
+                    </div>
+                    <div class="container-botton-presentation">
+                        <button class="contact-us-button"> Contactanos</button>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="welcome-container">
+                <h2>¡Bienvenidos al increíble mundo de la tecnología!</h2>
+                <p>En nuestra empresa, nos apasiona brindarles a nuestros clientes las últimas innovaciones en
+                    computadoras, impresoras, celulares, circuito cerrado de televisión, redes, televisores y
+                    accesorios. Permítanos presentarles nuestro portafolio, diseñado para satisfacer todas sus
+                    necesidades tecnológicas y llevar a cabo su experiencia al siguiente nivel.</p>
+
+            </div>
+
+            <div class="cards-container">
+                <div class="card-service">
+                    <img src="./assets/icons/Cotiza.svg">
+                    <p class="title-card">Cotiza</p>
+                    <p class="description-card">Cotiza tus productos mediante nuestro Whatsapp o correo electronico</p>
+                </div>
+                <div class="card-service">
+                    <img src="./assets/icons/Paga.svg">
+                    <p class="title-card">Paga</p>
+                    <p class="description-card">Paga tus productos a traves de nuestros medios de pago</p>
+                </div>
+                <div class="card-service">
+                    <img src="./assets/icons/Recibe.svg">
+                    <p class="title-card">Recibe</p>
+                    <p class="description-card">Recibe tus productos en tu casa u oficina</p>
+                </div>
+            </div>
+
+            <h3>Productos</h3>
+
+            <section class="products-container">
+                <div class="product-card product-card-laptop">
+                    <p class="product">Computadores Portatiles</p>
+                    <p class="marcas">Lenovo, Asus, Hp...</p>
+                </div>
+                <div class="product-card product-card-desktop">
+                    <p class="product">Computadores De Escritorio</p>
+                    <p class="marcas">Lenovo, Asus, Hp...</p>
+                </div>
+                <div class="product-card product-card-mobile">
+                    <p class="product">Celulares</p>
+                    <p class="marcas">Lenovo, Asus, Hp...</p>
+                </div>
+                <div class="product-card product-card-accessories">
+                    <p class="product">Accesorios</p>
+                    <p class="marcas">Lenovo, Asus, Hp...</p>
+                </div>
+                <div class="product-card product-card-printers">
+                    <p class="product">Impresoras</p>
+                    <p class="marcas">Lenovo, Asus, Hp...</p>
+                </div>
+                <div class="product-card product-card-monitors">
+                    <p class="product">Monitores</p>
+                    <p class="marcas">Lenovo, Asus, Hp...</p>
+                </div>
+
+            </section>
+
+            <section class="cctv">
+
+                <div class="association">
+                    <div class="aassociation-item">
+                        <img src="./assets/icons/LogoF5.svg">
+                    </div>
+                    <div class="association-item">
+                        <img src="./assets/icons/Inside D&S.png">
+                    </div>
+                </div>
+
+                <div class="service-association">
+                    <p> En asociacion con la empresa INSIDE D&S, ofrecemos instalacion de Circuito cerrado de television
+                        C.C.T.V - Domotica y Seguridad</p>
+                    <button class="contact-us-button"><img src="./assets/icons/wapp.svg">Contactanos</button>
+
+                </div>
+            </section>
+            <section class="carousel">
+                <div class="carousel-item" style="background-image: url('./assets/imgs/carrusel1.png');">
+
+                    <h3>Portátiles</h3>
+                    <p>Descubre la libertad y la potencia con las mejores marcas de computadores portátiles.</p>
+                </div>
+
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
